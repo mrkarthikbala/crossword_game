@@ -1,0 +1,26 @@
+<html>
+
+	<head>
+		<title>Login</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap --> 
+
+		<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" crossorigin="anonymous">
+		<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='login.js') }}"></script>
+		<link href="{{ url_for('static', filename='loginStyles.css') }}" type="text/css" rel="stylesheet"/>
+	</head>
+
+	<body>
+		
+		<div id = "loginContainer">
+			<h1>Sign in</h1>
+			<form id = "loginForm">
+				<input type="text" id = "username" placeholder = "username">
+				<input type = "password" id = "password" placeholder ="password">
+				<input type = "submit" class = "btn btn-primary btn-lg" onClick="login();return false;" value = "submit">
+			</form>
+		</div>
+	</body>
+
+</html>

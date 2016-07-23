@@ -1,0 +1,4 @@
+1. Display hints to player when the "hint" button is clicked (0-3)
+2. Allow for accounts to be created and players to login to track their high scores. Create login and signup pages, along with the required database tables. (0-3)
+3. Security: Prevent XSS and SQL injection attacks. Encrypt the username and password fields in the database, and ensure that username/password info is encrypted when it is sent over the network. (0-3)
+4. Styling (0-3)

@@ -1,0 +1,14 @@
+#remember to change password in dbReader to ubuntu
+
+CREATE DATABASE final_project;
+use final_project;
+CREATE TABLE ClueAnswerPairs(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, answer VARCHAR(300) NOT NULL, clue VARCHAR(300) NOT NULL, length INT NOT NULL	
+);
+
+
+player table
+use final_project;
+CREATE TABLE Player(
+	username VARCHAR(30) NOT NULL PRIMARY_KEY, password VARCHAR(30) NOT NULL, high_score BIGINT NOT NULL
+);

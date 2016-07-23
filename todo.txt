@@ -1,0 +1,8 @@
+
+
+Presentation:
+	go over requirements
+	2 types of hashing
+	mention web storage for logins
+
+

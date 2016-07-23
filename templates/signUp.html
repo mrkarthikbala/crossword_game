@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Sign Up</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+			<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap --> 
+			<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" crossorigin="anonymous">
+			<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" crossorigin="anonymous"></script>
+
+			<script type="text/javascript" src="{{ url_for('static', filename='signUp.js') }}"></script>
+			<link href="{{ url_for('static', filename='signUpStyles.css') }}" type="text/css" rel="stylesheet"/>
+
+	</head>
+
+	<body>
+		<div id="signUpContainer">
+			<h1>Sign Up!</h1>
+			<form name="signUpForm" id = "signUpForm">
+				<input type="text" id = "createUsername" placeholder="username">
+				<input type="password" id = "createPassword" placeholder="password">
+				<input type = "password" id="confirmPassword" placeholder="retype password">
+
+				<input type="button" class= "btn btn-primary btn-lg" id="submitSignupButton" value="submit" onClick="submitSignup()">
+			</form>
+		</div>
+	</body>
+</html>

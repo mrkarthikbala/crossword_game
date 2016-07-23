@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>CS242 Crossword Trainer</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" crossorigin="anonymous">
+
+	
+	<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap --> 
+	<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="{{ url_for('static', filename='game.js') }}"></script>
+	<link href="{{ url_for('static', filename='styles.css') }}" type="text/css" rel="stylesheet"/>
+
+	
+</head>
+
+<body onload = "startGame()" >
+	
+	<h1 id="username"></h1>
+	<h1 id="highScore"></h1>
+	<!--Holds all game elements, game canvas goes before div rightBar-->
+	<div id = "container">
+		<div class = "btn btn-info" id = "clock"></div>
+		<div id = "feedback"></div>
+		<div class = "btn btn-info" id = "score"></div>
+
+		<!--Holds clues and difficulty settings-->
+		<div id = "rightBar">
+			<div class = "list-group" id = "clueList"></div>	
+			<form id = "settings" name="settings">
+			  	<input type="button" name="difficulty" class = "btn btn-success" value="easy">
+				<input type="button" name="difficulty" class = "btn btn-warning" value="medium"> 	
+       				<input type="button" name="difficulty" class = "btn btn-danger" value="hard">
+			</form>
+			<input type="button" id = "hint" name="hint" class="btn btn-info" value="hint" onClick= "getHint()">
+		</div>
+	</div>
+</body>
+</html>
